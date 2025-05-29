@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Generalizable Domain Adaptation for Sim-and-Real Policy Co-Training">
+  <meta name="keywords" content="SAIL, Imitation Learning, Imitation, Policy, Execution">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAIL: Faster-than-Demonstration Execution of Imitation Learning Policies</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- title and authors -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Generalizable Domain Adaptation for Sim-and-Real Policy Co-Training</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Anonymous Authors</a></span>
+          </div>
+<!-- 
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://youtu.be/7AWPs9uCsV8"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- teaser video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <div class="centered-image">
+        <img src="static/images/teaser.png" alt="SAIL Teaser" width="75%">
+      </div> -->
+      <video id="teaser" loop playsinline controls height="100%">
+        <source src="./static/videos/ot_sim2real_presentation.mp4" type="video/mp4">
+      </video>      
+      <p class="has-text-centered">Scroll for more! ⬇️</p>
+      <!-- <h2 class="subtitle has-text-centered">
+        <span class="dnerf">SAIL</span> teaser video here.
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+<!-- abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Behavior cloning has shown promise for robot manipulation, but real-world demon
+            strations are costly to acquire at scale. While simulated data offers a scalable
+            alternative, particularly with advances in automated demonstration generation,
+            transferring policies to the real world is hampered by various simulation and real
+            domain gaps. In this work, we propose a unified sim-and-real co-training frame-
+            work for learning generalizable manipulation policies that primarily leverages
+            simulation and only requires a few real-world demonstrations. Central to our ap-
+            proach is learning a domain-invariant, task-relevant feature space. Our key insight
+            is that aligning the <strong>joint distributions</strong> of observations and their corresponding ac-
+            tions across domains provides a richer signal than aligning observations (marginals)
+            alone. We achieve this by embedding an Optimal Transport (OT)-inspired loss
+            within the co-training framework, and extend this to an Unbalanced OT framework
+            to handle the imbalance between abundant simulation data and limited real-world
+            examples. We validate our method on challenging manipulation tasks, showing it
+            can leverage abundant simulation data to achieve up to a 30% improvement in the
+            real-world success rate and even generalize to scenarios seen <strong>only in simulation</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Abstract. -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Acknowledgement</h2>
+    <p>
+      TODO: add acknowledgement
+    </p>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>placeholder 7</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
