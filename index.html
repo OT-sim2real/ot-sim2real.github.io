@@ -138,14 +138,217 @@
     <!-- Abstract. -->
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Acknowledgement</h2>
-    <p>
-      TODO: add acknowledgement
-    </p>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Simulation Experiments</strong></h3>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
+
+
+<section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+
+          <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>Simulation Task Setups: </bold></h4>
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <img class="center" src="./static/figures/sim_setup.png" alt="sim setup" width="100%" style="">
+              </div>
+            </div>
+          </div>
+
+          <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>Our method learns complex
+            manipulation tasks under significant domain shifts using fewer than 10 demonstrations from the target domains.</bold></h4>
+          <div class="columns is-centered">
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/texture/ID/ours.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Ours: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/texture/ID/cotrain.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Co-training: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/texture/ID/mmd.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">MMD: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/texture/ID/tgt.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Target-only: </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="columns is-centered">
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/viewpoint/ID/ours.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Ours: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/viewpoint/ID/cotrain.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Co-training: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/viewpoint/ID/mmd.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">MMD: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/viewpoint/ID/tgt.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Target-only: </p>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>Our method is compatible with
+            both image and point cloud observation modalities.</bold></h4>
+          <!-- add a section of point cloud ID x2 -->
+
+          <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>Our method generalizes more
+            effectively to Out-Of-Distribution (OOD) scenarios in target domains.</bold></h4>
+          <div class="columns is-centered">
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/texture/OOD/ours.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Ours: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/texture/OOD/cotrain.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Co-training: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/texture/OOD/mmd.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">MMD: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/texture/OOD/tgt.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Target-only: </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="columns is-centered">
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/viewpoint/OOD/ours.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Ours: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/viewpoint/OOD/cotrain.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Co-training: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/viewpoint/OOD/mmd.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">MMD: </p>
+              </div>
+            </div>
+
+            <div class="column is-centered">
+              <div class="video-container">
+                <video class="center" playsinline autoplay loop muted src="./static/videos/sim2sim_img/viewpoint/OOD/tgt.mp4" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Target-only: </p>
+              </div>
+            </div>
+          </div>
+          <!-- add a section of point cloud OOD x2 -->
+
+      </div>
+
+    </div>
+    </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Real-world Experiments</strong></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+
+          <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>Real-world Task Setups: </bold></h4>
+          <div class="columns is-centered">
+            <div class="column is-centered">
+              <div class="video-container">
+                <img class="center" src="./static/figures/real_setup.png" alt="sim setup" width="100%" style="">
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+
+    </div>
+    </div>
+</section>
+
+
+
+<!--<section class="section">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <h2 class="title is-3 has-text-centered">Acknowledgement</h2>-->
+<!--    <p>-->
+<!--      TODO: add acknowledgement-->
+<!--    </p>-->
+<!--  </div>-->
+<!--</section>-->
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
