@@ -115,22 +115,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Behavior cloning has shown promise for robot manipulation, but real-world demon
-            strations are costly to acquire at scale. While simulated data offers a scalable
-            alternative, particularly with advances in automated demonstration generation,
-            transferring policies to the real world is hampered by various simulation and real
-            domain gaps. In this work, we propose a unified sim-and-real co-training frame-
-            work for learning generalizable manipulation policies that primarily leverages
-            simulation and only requires a few real-world demonstrations. Central to our ap-
-            proach is learning a domain-invariant, task-relevant feature space. Our key insight
-            is that aligning the <strong>joint distributions</strong> of observations and their corresponding ac-
-            tions across domains provides a richer signal than aligning observations (marginals)
-            alone. We achieve this by embedding an Optimal Transport (OT)-inspired loss
-            within the co-training framework, and extend this to an Unbalanced OT framework
-            to handle the imbalance between abundant simulation data and limited real-world
-            examples. We validate our method on challenging manipulation tasks, showing it
-            can leverage abundant simulation data to achieve up to a 30% improvement in the
-            real-world success rate and even generalize to scenarios seen <strong>only in simulation</strong>.
+            Behavior cloning has shown promise for robot manipulation, but real-world demonstrations are costly to
+            acquire at scale. While simulated data offers a scalable alternative, particularly with advances in
+            automated demonstration generation, transferring policies to the real world is hampered by various
+            simulation and real domain gaps. In this work, we propose a unified sim-and-real co-training framework for
+            learning generalizable manipulation policies that primarily leverages simulation and only requires a few
+            real-world demonstrations. Central to our approach is learning a domain-invariant, task-relevant feature
+            space. Our key insight is that aligning the <strong>joint distributions</strong> of observations and their
+            corresponding actions across domains provides a richer signal than aligning observations (marginals) alone.
+            We achieve this by embedding an Optimal Transport (OT)-inspired loss within the co-training framework, and
+            extend this to an Unbalanced OT framework to handle the imbalance between abundant simulation data and
+            limited real-world examples. We validate our method on challenging manipulation tasks, showing it can
+            leverage abundant simulation data to achieve up to a 30% improvement in the real-world success rate and
+            even generalize to scenarios seen <strong>only in simulation</strong>.
           </p>
         </div>
       </div>
